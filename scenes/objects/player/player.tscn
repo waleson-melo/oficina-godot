@@ -1,0 +1,218 @@
+[gd_scene load_steps=39 format=3 uid="uid://msxx15koj5fe"]
+
+[ext_resource type="Texture2D" uid="uid://ewd8w4pe5s15" path="res://assets/sprites/player/without_sword/idle/01.png" id="1_dj20a"]
+[ext_resource type="Texture2D" uid="uid://dximdmufa6pdh" path="res://assets/sprites/player/without_sword/run/01.png" id="1_mlae2"]
+[ext_resource type="Script" path="res://scripts/player/player.gd" id="1_xesjx"]
+[ext_resource type="Texture2D" uid="uid://crsia07ancd7v" path="res://assets/sprites/player/without_sword/idle/02.png" id="2_aoif4"]
+[ext_resource type="Texture2D" uid="uid://s1lueljbm17d" path="res://assets/sprites/player/without_sword/run/02.png" id="2_gohk2"]
+[ext_resource type="Texture2D" uid="uid://cr67fph5eis25" path="res://assets/sprites/player/without_sword/fall/01.png" id="2_xkych"]
+[ext_resource type="Texture2D" uid="uid://frx87jqq68qb" path="res://assets/sprites/player/with_sword/fall/01.png" id="3_cnadm"]
+[ext_resource type="Texture2D" uid="uid://bias3rlx5727m" path="res://assets/sprites/player/without_sword/idle/03.png" id="3_iu0is"]
+[ext_resource type="Texture2D" uid="uid://bvwvp2r1knv22" path="res://assets/sprites/player/without_sword/run/03.png" id="3_rpuc6"]
+[ext_resource type="Texture2D" uid="uid://cqnd4525qqke0" path="res://assets/sprites/player/without_sword/idle/04.png" id="4_5b3ue"]
+[ext_resource type="Texture2D" uid="uid://2xarkviv4tkl" path="res://assets/sprites/player/without_sword/run/04.png" id="4_gac4q"]
+[ext_resource type="Texture2D" uid="uid://crm5qkxuvod8f" path="res://assets/sprites/player/without_sword/run/05.png" id="5_d3w1i"]
+[ext_resource type="Texture2D" uid="uid://co5be7mkboidt" path="res://assets/sprites/player/without_sword/idle/05.png" id="5_ljop3"]
+[ext_resource type="Texture2D" uid="uid://705p1u7h5log" path="res://assets/sprites/player/without_sword/run/06.png" id="6_b80dh"]
+[ext_resource type="Texture2D" uid="uid://b1pdov5yowqoo" path="res://assets/sprites/player/without_sword/jump/01.png" id="7_g7saa"]
+[ext_resource type="Texture2D" uid="uid://0prsnvrdmyai" path="res://assets/sprites/player/without_sword/jump/02.png" id="8_i80v5"]
+[ext_resource type="Texture2D" uid="uid://b0h5f30t8bjt8" path="res://assets/sprites/player/with_sword/idle/01.png" id="8_jt7jf"]
+[ext_resource type="Texture2D" uid="uid://brhkcrjsujr8x" path="res://assets/sprites/player/without_sword/jump/03.png" id="9_3oxx7"]
+[ext_resource type="Texture2D" uid="uid://b47d8ejo3cjrj" path="res://assets/sprites/player/with_sword/idle/02.png" id="9_to6vw"]
+[ext_resource type="Texture2D" uid="uid://b0thouwui0tff" path="res://assets/sprites/player/with_sword/idle/03.png" id="10_sqxfp"]
+[ext_resource type="Texture2D" uid="uid://dq1yg2ix0gno1" path="res://assets/sprites/player/without_sword/land/01.png" id="11_1o0vh"]
+[ext_resource type="Texture2D" uid="uid://j66ahiwn83hu" path="res://assets/sprites/player/with_sword/idle/04.png" id="11_rqkv6"]
+[ext_resource type="Texture2D" uid="uid://c5eqo8edjb6j7" path="res://assets/sprites/player/without_sword/land/02.png" id="12_lm4cg"]
+[ext_resource type="Texture2D" uid="uid://dawae6t63u81" path="res://assets/sprites/player/with_sword/idle/05.png" id="12_tls3y"]
+[ext_resource type="Texture2D" uid="uid://bm43irq8bbncx" path="res://assets/sprites/player/with_sword/jump/01.png" id="16_6dv8w"]
+[ext_resource type="Texture2D" uid="uid://bdljbvrppoc6c" path="res://assets/sprites/player/with_sword/jump/02.png" id="17_buebc"]
+[ext_resource type="Texture2D" uid="uid://u0skkgs11h0e" path="res://assets/sprites/player/with_sword/jump/03.png" id="18_uovvt"]
+[ext_resource type="Script" path="res://scripts/player/animated_sprite.gd" id="19_u7ir8"]
+[ext_resource type="Texture2D" uid="uid://dtac1avpvhy2n" path="res://assets/sprites/player/with_sword/land/01.png" id="21_2n40s"]
+[ext_resource type="Texture2D" uid="uid://dlpysmg1y31xi" path="res://assets/sprites/player/with_sword/land/02.png" id="22_cm38l"]
+[ext_resource type="Texture2D" uid="uid://dowihgtnawnlw" path="res://assets/sprites/player/with_sword/run/01.png" id="29_dctq6"]
+[ext_resource type="Texture2D" uid="uid://w13rmqeso0am" path="res://assets/sprites/player/with_sword/run/02.png" id="30_tlc5r"]
+[ext_resource type="Texture2D" uid="uid://c3nhslcb5m72f" path="res://assets/sprites/player/with_sword/run/03.png" id="31_n743e"]
+[ext_resource type="Texture2D" uid="uid://dpce2s5xfjif5" path="res://assets/sprites/player/with_sword/run/04.png" id="32_rty5b"]
+[ext_resource type="Texture2D" uid="uid://cv5ov2rmiq3ib" path="res://assets/sprites/player/with_sword/run/05.png" id="33_fsnd0"]
+[ext_resource type="Texture2D" uid="uid://c75be5d0q3aey" path="res://assets/sprites/player/with_sword/run/06.png" id="34_mbvlj"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jxlbt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_xkych")
+}],
+"loop": false,
+"name": &"FALL",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_cnadm")
+}],
+"loop": false,
+"name": &"FALL_WITH_SWORD",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_dj20a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_aoif4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_iu0is")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_5b3ue")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ljop3")
+}],
+"loop": true,
+"name": &"IDLE",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_jt7jf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_to6vw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_sqxfp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_rqkv6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_tls3y")
+}],
+"loop": true,
+"name": &"IDLE_WITH_SWORD",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_g7saa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_i80v5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_3oxx7")
+}],
+"loop": false,
+"name": &"JUMP",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_6dv8w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_buebc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_uovvt")
+}],
+"loop": false,
+"name": &"JUMP_WITH_SWORD",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_1o0vh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_lm4cg")
+}],
+"loop": false,
+"name": &"LAND",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("21_2n40s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_cm38l")
+}],
+"loop": false,
+"name": &"LAND_WITH_SWORD",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_mlae2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_gohk2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_rpuc6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_gac4q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_d3w1i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_b80dh")
+}],
+"loop": true,
+"name": &"RUN",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("29_dctq6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_tlc5r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_n743e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_rty5b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_fsnd0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_mbvlj")
+}],
+"loop": true,
+"name": &"RUN_WITH_SWORD",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p5ibj"]
+size = Vector2(16, 21)
+
+[node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("_character_texture")]
+script = ExtResource("1_xesjx")
+_character_texture = NodePath("AnimatedSprite")
+
+[node name="AnimatedSprite" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_jxlbt")
+animation = &"FALL_WITH_SWORD"
+autoplay = "IDLE"
+script = ExtResource("19_u7ir8")
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_p5ibj")
+
+[node name="Camera" type="Camera2D" parent="."]
+limit_left = 0
+limit_top = 0
+limit_bottom = 0
+
+[connection signal="animation_finished" from="AnimatedSprite" to="AnimatedSprite" method="_on_animation_finished"]
